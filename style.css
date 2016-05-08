@@ -1,0 +1,487 @@
+ /*
+color theme: 
+#E7EEF9 : Baby blue 
+#96C0E6 : sky blue
+#0071BC : ocean blue
+#191919 : black-ish tone
+#dddddd : light gray
+#333333 : dark gray
+*/
+
+/*global style*/
+
+ /*
+Theme Name: Paper PR wordpress demo for web170
+Author: Dini Nadza
+Author URI: http://www.dininadza.com/
+Description: This is a wordpress website for Paper PR
+Version: 1.0
+*/
+
+  * {
+  padding:0; 
+  margin: 0;
+  }
+  
+  body {
+  width:100%;
+  background-color: #E7EEF9;
+  color: #191919;
+  font-family: arial, verdana, sans-serif;
+  font-size: 98%; /*default font size is 16px*/
+  line-height: 130%;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+  font-family: montserrat, "avenir next condensed", arial, sans-serif;
+  color: #0071BC;
+  padding-top:5px;
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-transform: uppercase;}
+  
+  #maincontainer { 
+  background-color: white; 
+  max-width: 960px; 
+  margin: auto;
+    margin-top: -10px;
+  background-color: white; 
+  }
+  
+  #slider {
+  width: 100%;
+  }
+  
+  a { 
+  color: #0071BC;
+  text-decoration:none;}
+  
+  a:hover { 
+  text-decoration: underline;}
+
+  .mainContent {
+  background-color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  }
+
+  .mainContent a {
+  color: #ddd;
+  text-shadow: 1px 1px #000;}
+  
+  #cta a { 
+  font-style: italic; 
+  }
+  
+  #cta p { 
+  margin-bottom: 8px;
+  }
+  
+  .socialbutton {
+  width:25px;
+  margin: 5px 0 5px auto; 
+  opacity: 0.8;}
+  
+  .logo { 
+  padding-top: 10px;
+  }
+  
+  #top {
+  background-color: white;}
+  
+
+  #clientlogo { 
+  clear: both; 
+  padding: 10px;
+  margin: 0 auto; 
+  background-color: white;
+  }
+  
+  #clientlogo img {
+  width: 80px;
+  margin: 5px 30px;
+  }
+  
+  ul li{
+  display: inline;
+  }
+  
+  .servicesHeader {
+  padding-top: 20px;
+  margin: 10px;
+  }
+  
+  .aboutUs, .servicesSubpage {
+  padding-top: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+  }
+  
+  .aboutUs article { 
+  float:left;
+  width: 50%;
+  }
+  
+  .aboutUs aside {
+  float: right; 	
+  width: 40%; 
+  }
+  
+  .aboutUs img, .servicesSubpage img {
+  width: 100%;
+  padding-top: 10px; 
+  margin-bottom: 15px;
+  }
+  
+  .aboutUs p, .servicesSubpage p {
+  margin-bottom: 8px;
+  }
+  
+  .aboutUs a, .servicesSubpage a{
+  font-weight: 300;
+  text-decoration: none;
+  color: #0071BC;
+ }
+  
+  .aboutUs ul {
+  background-color: #C3C3C3;
+  padding: 5px 15px;
+  margin-bottom: 10px;}
+  
+  .aboutUs ul li {
+  list-style-type: none; 
+  display: list-item;
+  }
+ 
+ .aboutUs a:hover{ 
+  font-style: italic;
+  text-decoration:underline;
+  }
+  
+  .servicesSubpage article {
+  float:left;
+  width: 70%;
+  }
+  
+  .servicesSubpage aside { 
+  float:right; 
+  width: 20%;
+  padding: 25px;
+  margin-left:15px;
+  background-color:#C3C3C3;
+  }
+  
+  aside ul li { 
+  list-style-type: none;
+  display:list-item;
+  }
+  
+  .servicesSubpage a { 
+  color: #0071BC;
+  }
+  
+	.servicesSubpage a:hover{ 
+  font-style: italic;
+  text-decoration:underline;
+  }
+  
+  form {
+  float: right;
+  margin-bottom: 20px;
+  }
+  
+  .aside { 
+  float:left; 
+  width: 45%;
+  }
+  
+  #servicesContent {
+  background-color:#0071BC; 
+  text-align: center;
+  }
+  
+  #servicesContent p {
+  padding: 10px 20px;
+  margin-bottom:10px;
+  }
+ 
+  .servicesContent { 
+  background-color: #0071BC;
+  float:left; 
+  width: 25%; 
+  min-height: 230px;
+  color: white;
+  }
+  
+  .servicesClear {
+  clear:both;
+  background-color: #0071BC;
+  float:left; 
+  width: 25%; 
+  min-height: 230px;
+  color: white; }
+  
+  .servicesContent h3, .servicesClear h3 { 
+  background-color: #96C0E6;
+  color: black;
+  padding-top: 3px; 
+  padding-bottom: 3px;
+  }
+  
+  #bottomcontent {
+  clear:both;
+  background-color: #96C0E6;}
+  
+  footer {
+  background-color: #0071BC;}
+  
+  #utility{
+  float: right;
+  margin-top: 30px;
+  }
+  
+  #relations, #reputation, #graphic, #branding, #training, #csr, #editorial, #public {
+  float: left; 
+  width: 25%;
+  padding-top:15px;
+  height: 60px;
+  background-color:#0071BC;
+  color: #ddd;
+  text-align: center;
+  font-weight: normal;
+  font-size: 95%;
+  font-family: montserrat, arial, sans-serif;
+  text-transform: uppercase;
+  }
+  
+  .cta1, .cta2, .cta3 {
+  float: left;
+  width: 30%; 
+  margin-top: 2%;
+  padding: 1.5%; 
+  height: 180px;  
+  }
+
+  .cta2 {
+  border-right: 1px solid #333; 
+  border-left: 1px solid #333; 
+  }
+  
+  .bottom-left{ 
+  clear: both; 
+  float: left; 
+  width: 250px;
+  padding-top: 10px;
+  margin-left: 10px;
+  background-color: transparent;
+  }
+  
+  .bottom-right {
+  float: right;
+  width: 250px;
+  padding-top: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  }
+  
+  header {
+  max-width: 960px;
+  background-color: white;
+  clear: both;
+  margin: auto;}
+  
+  #bottomcontent {
+  font-size: 0.9em;
+  min-height: 170px;
+  background-color: #96C0E6;
+  }
+  
+  footer {
+  clear: both;
+  height: 20px;
+  color: #0071BC;
+  padding: 15px 10px;}
+  
+  
+  footer p {
+  clear: both;
+  float: left;
+  background-color: transparent;
+  color: white;
+  }
+  
+   footer a {
+  color: white;}
+
+  #footernav {
+  float: right;
+  background-color: transparent;
+  text-align: right;
+  }
+  
+  #cssmenu {
+  width: 100%;}
+  
+  .readmore { 
+  padding: 2px;
+  margin: auto; 
+  width: 80px; 
+  background-color: #96C0E6; 
+  color: black;
+  }
+  
+  .maincontent, #cta, .clientlogo {max-width: 980px;}
+  
+  .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+  
+  .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  
+  /* Responsive MOBILE DEVICE LAYOUT */
+  @media all and (max-width: 600px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #maincontainer, .mainContent, #cta, .cta1, .cta2, .cta3 {
+  padding:0; 
+  margin: 0;
+  }
+  
+  h2 {
+  text-align: center;
+  padding-top:8px;
+  margin-bottom:10px;}
+  
+  #maincontainer {
+  width: 100%;
+  padding-top: 5px;
+  }
+  
+  h3 { 
+  font-size: 1.2em; 
+  text-align: center; 
+  }
+      
+  #slider {
+max-width: 900px;
+margin: 50px auto;
+} 
+  #utility {display:none;} 
+  
+  #relations, #reputation, #graphic, #branding, #training, #csr, #editorial, #public  {
+  clear:both; 
+  text-align: center;
+  width: 100%;
+  padding-top:5px;
+  height: 40px;
+  background-color: white;
+  font-weight: 700px;
+  font-size: 100%;
+  font-family: montserrat, arial, sans-serif;
+  text-transform: uppercase;
+  }
+  
+  .cta1, .cta2, .cta3 {
+  clear: both; 
+  float:none;
+  width: 90%; 
+  margin:auto;
+  text-align: center;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #333; }
+ 
+ .cta2 {
+ border-right: none; 
+ border-left: none;
+ }
+ 
+ 
+  .mainContent h2 {
+  background-color: #96C0E6;
+  margin-bottom:0;}
+ 
+  .mainContent a {
+  color: #ddd;
+  text-shadow: 1px 1px #000;}
+
+  
+  #relations, #reputation, #graphic, #branding, #training, #csr, #editorial, #public {
+ float: none;
+  background-color:#0071BC;
+  padding-top: 10px;
+  }
+  
+ .aboutUs, .servicesSubpage {
+  padding-top: 5px;
+  }
+  
+  .aboutUs article { 
+  float:none;
+  width: 100%;
+  }
+  
+  .aboutUs aside {
+	float:none;
+	width:100%; 
+  }
+  
+  .companyinfo {
+  align: right; 
+  }
+  
+  .mainContent, footer, .footernav, footer p {
+  width: 100%; 
+  }
+  
+  .bottom-left, .bottom-right {
+  width:95%;
+  padding: auto 10;
+  clear:both;
+  float: none;
+  text-align:center;}
+  
+  .servicesContent { 
+  clear: both;
+  width: 100%;
+  min-height: 200px;
+  }
+  
+  .servicesClear {
+  clear:both;
+  width:100%;
+  min-height:200px;}
+  
+  .servicesHeader {margin-top: -10px;}
+  
+  .servicesSubpage article {
+  float:none;
+  width: 100%;   
+  }
+  
+  .servicesSubpage aside { 
+  float:none; 
+  width: 50%;
+  margin:auto;
+  }
+  
+  .aside { 
+  float:none; 
+  width: 90%;
+  text-align:center; 
+  margin: auto;
+  }
+
+	form { 
+	float: none;
+	padding-top: 20px;
+	width: 70%;
+	margin:auto;
+	}
+  
+  
+  footer {padding: 0;}
+  
+  #footernav { 
+  display: none;
+  }
+  
+  footer p { 
+  text-align: center;}
+  }
