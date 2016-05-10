@@ -12,7 +12,7 @@
 <!--CSS styles-->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/styles.css">
 <link href="<?php bloginfo('stylesheet_url');?>" type="text/css" rel="stylesheet">  
-<link href="js/css/form.css" type="text/css" rel="stylesheet">  
+<link href="js/css/form.css" type="text/css" rel="stylesheet"> <!-- this is for form -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/component.css" />
 <link rel="shortcut icon" href="favicon.ico">
 <!--end CSS-->
@@ -53,7 +53,11 @@
 <!--header ends here--> 
 
 <!--navigation starts here-->
-<div id="cssmenu">
+<?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' =>'div', 'container_id' => 'cssmenu')); ?>
+
+
+<!--<div id="cssmenu">
+
 <ul>
  <li><a href="main.html">About</a>
   <ul>
@@ -81,7 +85,7 @@
   <li><a href="#">Blog</a></li>
  <li><a href="js/contact.html">Contact</a></li>
 </ul>
-</div>
+</div>-->
 <!--nav ends--> 
 
 
@@ -90,8 +94,9 @@
 <section class="aboutUs">
 <article>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-<h2><?php the_title(); ?></h2>
-<?php the_content(); ?>
+<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+
+<?php the_content(''); ?>
 <?php endwhile; endif;  ?>
 
 <p>index.php</p>
