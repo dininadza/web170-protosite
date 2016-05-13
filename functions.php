@@ -8,4 +8,8 @@ Description: This is a wordpress website for Paper PR
 Version: 1.0
 */
 
+register_nav_menus(array(
+'main-menu' => _('Main'), 
+)); 
+
 ?>
