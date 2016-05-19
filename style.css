@@ -38,7 +38,6 @@ Version: 1.0
   padding-top:5px;
   font-size: 1em;
   font-weight: normal;
-  margin-bottom: 10px;
   text-transform: uppercase;}
  
   #maincontainer { 
@@ -48,18 +47,7 @@ Version: 1.0
     margin-top: -10px;
   background-color: white; 
   }
-  
-  /*start wordpress generated styles */
-  
-  .alignright { 
-  float: right; 
-  }
    
-  .alignleft { 
-  float: left; 
-  }
-   /* end wordpress style */
-    
   #slider {
   width: 100%;
   }
@@ -130,18 +118,21 @@ Version: 1.0
   margin-bottom: 20px;
   }
   
-  .aboutUs article { 
+  article#content { 
   float:left;
-  width: 50%;
+  width: 60%;
   }
   
   .aboutUs aside {
   float: right; 	
-  width: 40%; 
+  width: 30%; 
+  }
+  
+  .companyinfo {
+  width: 90%;
   }
   
   .aboutUs img, .servicesSubpage img {
-  width: 100%;
   padding-top: 10px; 
   margin-bottom: 15px;
   }
@@ -196,18 +187,8 @@ Version: 1.0
 	.servicesSubpage a:hover{ 
   font-style: italic;
   text-decoration:underline;
-  }
-  
-  form {
-  float: right;
-  margin-bottom: 20px;
-  }
-  
-  .aside { 
-  float:left; 
-  width: 45%;
-  }
-  
+  }  
+
   #servicesContent {
   background-color:#0071BC; 
   text-align: center;
@@ -348,6 +329,53 @@ Version: 1.0
   .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
   
   .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  
+  .article h2{
+  padding-top: 15px;
+  margin-bottom: 0; 
+  }
+  
+  small { 
+  display: block; 
+  margin-bottom: 10px;
+  }
+  
+  .postings { 
+  overflow: hidden; 
+  margin-bottom: 20px; 
+    }
+  
+ aside { 
+  float: right;
+  width: 30%;
+  }
+  
+  #single { 
+  float:left;
+  width: 60%;
+  }
+  
+  #single img {
+  float: none; 
+  }
+  /*******************start wordpress generated styles**************/
+  
+  .alignright { 
+  float: right; 
+  margin: auto 5px 0 20px;
+  }
+   
+  .alignleft { 
+  float: left; 
+  margin: auto 20px 0 0; 
+  }
+  
+  img.wp-post-image, img.attachment-thumbnail, img.size-thumbnail{
+  float: left;
+  margin: 0 10px 0 0; 
+  }
+  
+    /*******************END wordpress generated styles**************/
   
 
   
