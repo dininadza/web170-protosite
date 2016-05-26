@@ -1,31 +1,37 @@
 <!--aside content STARTS-->
 <aside>
+
+<!--begin sub navigation-->
+<section id="sub-nav">
+
 <?php 
-if(is_page()){
-	
-if($post->post_parent) { 
 
-echo '<h2>'.get_the_title($post->post_parent). '</h2>'; 
-echo '<ul>';
-wp_list_pages(array('title_li' => '', 'child_of' => $post->post_parent,)); 
+register_nav_menus(array(
+'main-menu' =>_('Main'),
+));
 
-echo '<ul>';
-
-} else {  
-echo '<h2>'.get_the_title($post->ID).'</h2>';
-echo '<ul>';
-wp_list_pages(array('title_li' => '','child_of' => $post->ID,));
-
-echo '</ul>';
-}
-
-}
-if(!(is_page())){
-	echo '<h2>Blog</h2>';
-	echo '<ul>';
-wp_list_categories(array('title_li' => '',)); 
-echo '<ul>'; 
-}
 ?>
+</section>
+
+
+<!--end sub navigation-->
+
+
+<!-- begin pull quotes-->
+<section id="quotes">
+<?php 
+if (get_post_meta($post->ID, 'quote', true)):?>
+<blockquote><?php echo get_post_meta($post->ID, 'quote', true); ?></blockquote>
+ <?php endif;?>
+</section>
+<!--end pull quotes-->
+
+
+<!--Begin dynamic widget-->
+<section id="dynamic-widgets">
+<?php dynamic_sidebar(); ?>
+</section>
+<!--end dynamic widget-->
+
 </aside>
 <!--aside content ENDS-->
