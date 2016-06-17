@@ -5,7 +5,7 @@
 
 <!-- begin meta-->
 <meta name="viewport" content="width=device-width initial-scale=1">
-<meta name="description" content="<?php get_the_excerpt(); ?>"/>
+<meta name="description" content="<?php echo get_the_excerpt(); ?>"/>
 
 <!-- links --> 
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
